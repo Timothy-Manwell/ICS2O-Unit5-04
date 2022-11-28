@@ -23,8 +23,9 @@ function updateSliderValue(valueFromSlider) {
 function myButtonClicked() {
   let day = parseInt(document.getElementById("day").value)
   let age = valueFromSlider
-  if ((day == tuesday || day == thursday) || (age > 12 || age < 25)) {
-    document.getElementById("price").innerHTML = "You're eligible for student pricing."
+  if (day == tuesday || day == thursday || age > 12 || age < 25) {
+    document.getElementById("price").innerHTML =
+      "You're eligible for student pricing."
   } else {
     document.getElementById("price").innerHTML =
       "You're not eligible for student pricing."
