@@ -19,13 +19,16 @@ const day = parseInt(document.getElementById("day").value)
 const age = valueFromSlider
 
 function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = "Your age: " + valueFromSlider
-  }
+  document.getElementById("slider-value").innerHTML =
+    "Your age: " + valueFromSlider
+}
 
 function myButtonClicked() {
-  if ((day == tuesday || day == thursday) || (age > 12 || age < 25)) {
-    document.getElementById("price").innerHTML = "You're eligible for student pricing."
+  if (day == tuesday || day == thursday || age > 12 || age < 25) {
+    document.getElementById("price").innerHTML =
+      "You're eligible for student pricing."
   } else {
-    document.getElementById("price").innerHTML = "You're not eligible for student pricing."
+    document.getElementById("price").innerHTML =
+      "You're not eligible for student pricing."
   }
 }
