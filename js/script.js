@@ -24,7 +24,7 @@ function myButtonClicked() {
   let day = parseInt(document.getElementById("day").value)
   let age = parseInt(document.getElementById("slider-value").value)
 
-  if (day == tuesday || day == thursday || age > 12 || age < 25) {
+  if (day == "tuesday" || day == "thursday" || age > "12" || age < "25") {
     document.getElementById("price").innerHTML =
       "You're eligible for student pricing."
   } else {
